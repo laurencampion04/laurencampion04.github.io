@@ -1,15 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
+/* =========================
+   COLOR SYSTEM
+   ========================= */
+:root {
+    --light-bronze: #cb997e;
+    --powder-petal: #eddcd2;
+    --linen: #fff1e6;
+    --parchment: #f0efeb;
+    --desert-sand: #ddbea9;
+    --dry-sage: #a5a58d;
+    --ash-grey: #b7b7a4;
+
+    /* semantic roles */
+    --bg-main: var(--linen);
+    --bg-soft: var(--powder-petal);
+    --surface: var(--parchment);
+    --text-main: #3a3a3a;
+    --text-muted: #6b6b6b;
+    --accent: var(--light-bronze);
+    --accent-soft: var(--desert-sand);
+}
+
+/* =========================
+   GLOBAL RESET
+   ========================= */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* =========================
+   BASE STYLES
+   ========================= */
 body {
     font-family: 'Inter', sans-serif;
-    background: radial-gradient(circle at top, #eef2ff, #f8fafc);
-    color: lightslategray;
+    background: radial-gradient(circle at top, var(--bg-soft), var(--bg-main));
+    color: var(--text-main);
     min-height: 100vh;
 }
 
@@ -19,13 +47,16 @@ body {
     padding: 4rem 2rem;
 }
 
+/* =========================
+   HEADER / NAV
+   ========================= */
 .site-header {
     position: sticky;
     top: 0;
     z-index: 100;
     backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.85);
-    border-bottom: 1px solid rgba(59, 130, 246, 0.15);
+    background: rgba(240, 239, 235, 0.85);
+    border-bottom: 1px solid var(--accent-soft);
 }
 
 .nav {
@@ -40,7 +71,7 @@ body {
 .logo {
     font-weight: 700;
     font-size: 1.1rem;
-    color: #3b82f6;
+    color: var(--accent);
 }
 
 .nav-links {
@@ -51,7 +82,7 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: #0f172a;
+    color: var(--text-main);
     font-weight: 500;
     position: relative;
     transition: color 0.2s ease;
@@ -64,18 +95,21 @@ body {
     left: 0;
     width: 0;
     height: 2px;
-    background: #3b82f6;
+    background: var(--accent);
     transition: width 0.25s ease;
 }
 
 .nav-links a:hover {
-    color: #3b82f6;
+    color: var(--accent);
 }
 
 .nav-links a:hover::after {
     width: 100%;
 }
 
+/* =========================
+   HERO SECTIONS
+   ========================= */
 .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -86,22 +120,25 @@ body {
 .hero-text h1 {
     font-size: 3.5rem;
     font-weight: 700;
-    color: #3b82f6;
+    color: var(--accent);
 }
 
 .hero-text h2 {
     font-size: 1.5rem;
-    color: #3b82f6;
+    color: var(--dry-sage);
     margin: 0.5rem 0 1.5rem;
 }
 
 .hero-text p {
     font-size: 1.1rem;
     line-height: 1.6;
-    color: #475569;
+    color: var(--text-muted);
     max-width: 480px;
 }
 
+/* =========================
+   HOME HERO
+   ========================= */
 .home-hero {
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
@@ -113,21 +150,25 @@ body {
 .home-text h1 {
     font-size: 3.2rem;
     font-weight: 700;
+    color: var(--accent);
 }
 
 .home-text h2 {
     font-size: 1.4rem;
-    color: #38bdf8;
+    color: var(--dry-sage);
     margin: 0.5rem 0 1.5rem;
 }
 
 .intro {
     max-width: 520px;
     line-height: 1.6;
-    color: #475569;
+    color: var(--text-muted);
     font-size: 1.05rem;
 }
 
+/* =========================
+   HIGHLIGHTS
+   ========================= */
 .highlights {
     list-style: none;
     margin: 1.5rem 0 2rem;
@@ -136,8 +177,12 @@ body {
 .highlights li {
     margin-bottom: 0.75rem;
     font-size: 1rem;
+    color: var(--text-main);
 }
 
+/* =========================
+   PROFILE IMAGE
+   ========================= */
 .home-photo {
     display: flex;
     justify-content: center;
@@ -148,10 +193,13 @@ body {
     height: 260px;
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid rgba(59, 130, 246, 0.35);
-    box-shadow: 0 16px 32px rgba(15, 23, 42, 0.12);
+    border: 3px solid var(--accent-soft);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
 }
 
+/* =========================
+   BUTTONS
+   ========================= */
 .buttons {
     margin-top: 2rem;
     display: flex;
@@ -167,36 +215,39 @@ body {
 }
 
 .btn.primary {
-    background: #3b82f6;
+    background: var(--accent);
     color: white;
 }
 
 .btn.secondary {
-    border: 1px solid #3b82f6;
-    color: #3b82f6;
+    border: 1px solid var(--accent);
+    color: var(--accent);
     background: transparent;
 }
 
 .btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.25);
+    box-shadow: 0 10px 25px rgba(203, 153, 126, 0.35);
 }
 
+/* =========================
+   HERO VISUAL / CODE CARD
+   ========================= */
 .hero-visual {
     display: flex;
     justify-content: center;
 }
 
 .code-card {
-    background: #ffffff;
+    background: var(--surface);
     border-radius: 12px;
     padding: 1.5rem;
-    border: 1px solid rgba(59, 130, 246, 0.2);
-    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.1);
+    border: 1px solid var(--accent-soft);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
 }
 
 pre {
     font-family: monospace;
     font-size: 0.9rem;
-    color: #1e40af;
+    color: #5f5f4a;
 }
