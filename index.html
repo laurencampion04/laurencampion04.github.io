@@ -7,100 +7,112 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<div class="container">
-  <header class="site-header">
-    <nav class="nav">
-      <div class="logo">LaurenCampion</div>
 
-      <ul class="nav-links">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </ul>
-    </nav>
-  </header>
+<header class="site-header">
+  <nav class="nav">
+    <div class="logo">LaurenCampion</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <main class="container">
-    <section class="home-hero">
+<main>
+
+  <!-- HERO (full viewport height) -->
+  <section class="home-hero section-full">
+    <div class="container home-hero-inner">
       <div class="home-text">
         <h1>Lauren Campion</h1>
-        <h2>Developer & Designer</h2>
+        <h2>Human–Computer Interaction Graduate</h2>
 
         <p class="intro">
-          Recent graduate passionate about building thoughtful, user-focused
-          digital experiences that balance clean design with solid engineering.
+          I design and build thoughtful, user-focused digital experiences,
+          combining UX research, data, and clean front-end engineering.
         </p>
 
         <div class="buttons">
-          <a href="projects.html" class="btn primary">View Projects</a>
-          <a href="contact.html" class="btn secondary">Contact Me</a>
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="#contact" class="btn secondary">Contact Me</a>
         </div>
       </div>
 
       <div class="home-photo">
-        <img src="assets/profile.jpg" alt="Your Name portrait" />
-      </div>
-    </section>
-  </main>
-
-  <section class="focus container">
-    <h2>What I Focus On</h2>
-    <div class="focus-grid">
-      <div class="focus-card">
-        <h3>Human-Centered Design</h3>
-        <p>Designing systems grounded in user needs, accessibility, and empathy.</p>
-      </div>
-      <div class="focus-card">
-        <h3>Data-Informed Decisions</h3>
-        <p>Using qualitative and quantitative data to guide design choices.</p>
-      </div>
-      <div class="focus-card">
-        <h3>UX Research</h3>
-        <p>Usability testing, interviews, and evaluation to validate design outcomes.</p>
+        <img src="assets/profile.jpg" alt="Lauren Campion portrait" />
       </div>
     </div>
   </section>
 
-  <section class="projects container">
-    <h2>Selected Projects</h2>
+  <!-- FOCUS -->
+  <section class="focus section-soft">
+    <div class="container">
+      <h2>What I Focus On</h2>
 
-    <div class="project-grid">
-      <article class="project-card">
-        <h3>Improving Onboarding with User Data</h3>
-        <p class="project-meta">UX Research · Data Analysis · Prototyping</p>
-        <p>
-          Analyzed user behavior and survey data to redesign a mobile onboarding
-          experience and reduce early drop-off.
-        </p>
-        <a href="project-onboarding.html" class="project-link">View Case Study →</a>
-      </article>
+      <div class="focus-grid">
+        <div class="focus-card">
+          <h3>Human-Centered Design</h3>
+          <p>Designing systems grounded in real user needs, accessibility, and empathy.</p>
+        </div>
 
-      <article class="project-card">
-        <h3>Usability Evaluation of an Academic Tool</h3>
-        <p class="project-meta">Heuristic Evaluation · Testing</p>
-        <p>
-          Conducted usability testing and heuristic analysis to identify key
-          interaction issues and recommend design improvements.
-        </p>
-        <a href="project-usability.html" class="project-link">View Case Study →</a>
-      </article>
+        <div class="focus-card">
+          <h3>Data-Informed Decisions</h3>
+          <p>Using qualitative and quantitative data to guide design choices.</p>
+        </div>
+
+        <div class="focus-card">
+          <h3>UX Research</h3>
+          <p>Usability testing, interviews, and evaluation to validate outcomes.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="process container">
-    <h2>My Design Process</h2>
+  <!-- PROJECTS -->
+  <section id="projects" class="projects section-full">
+    <div class="container">
+      <h2>Selected Projects</h2>
 
-    <ol class="process-steps">
-      <li><strong>Understand</strong> — Research users, goals, and constraints</li>
-      <li><strong>Analyze</strong> — Synthesize insights from data</li>
-      <li><strong>Design</strong> — Prototype and iterate on solutions</li>
-      <li><strong>Evaluate</strong> — Test, measure, and refine</li>
-    </ol>
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>Improving Onboarding with User Data</h3>
+          <p class="project-meta">UX Research · Data Analysis · Prototyping</p>
+          <p>
+            Analyzed user behavior and survey data to redesign a mobile onboarding
+            experience and reduce early drop-off.
+          </p>
+          <a href="project-onboarding.html" class="project-link">View Case Study →</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Usability Evaluation of an Academic Tool</h3>
+          <p class="project-meta">Heuristic Evaluation · Testing</p>
+          <p>
+            Conducted usability testing and heuristic analysis to identify key
+            interaction issues and recommend design improvements.
+          </p>
+          <a href="project-usability.html" class="project-link">View Case Study →</a>
+        </article>
+      </div>
+    </div>
   </section>
 
+  <!-- PROCESS -->
+  <section class="process section-soft">
+    <div class="container">
+      <h2>My Design Process</h2>
 
+      <ol class="process-steps">
+        <li><strong>Understand</strong> — Research users, goals, and constraints</li>
+        <li><strong>Analyze</strong> — Synthesize insights from data</li>
+        <li><strong>Design</strong> — Prototype and iterate on solutions</li>
+        <li><strong>Evaluate</strong> — Test, measure, and refine</li>
+      </ol>
+    </div>
+  </section>
 
+</main>
 
-</div>
 </body>
 </html>
