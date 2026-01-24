@@ -324,3 +324,39 @@ pre {
     color: var(--accent);
     text-decoration: none;
 }
+
+.process h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    color: var(--accent);
+}
+
+.process-steps {
+    list-style: none;
+    counter-reset: step;
+    max-width: 600px;
+}
+
+.process-steps li {
+    counter-increment: step;
+    margin-bottom: 1.25rem;
+    padding-left: 2.5rem;
+    position: relative;
+    color: var(--text-muted);
+}
+
+.process-steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.75rem;
+    height: 1.75rem;
+    background: var(--accent-soft);
+    color: var(--text-main);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1.75rem;
+    font-weight: 600;
+}
+
