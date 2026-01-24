@@ -8,10 +8,11 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background: radial-gradient(circle at top, #0f172a, #020617);
-    color: #e5e7eb;
+    background: radial-gradient(circle at top, #eef2ff, #f8fafc);
+    color: #0f172a;
     min-height: 100vh;
 }
+
 
 .container {
     max-width: 1200px;
@@ -24,8 +25,8 @@ body {
     top: 0;
     z-index: 100;
     backdrop-filter: blur(10px);
-    background: rgba(2, 6, 23, 0.75);
-    border-bottom: 1px solid rgba(56, 189, 248, 0.15);
+    background: rgba(255, 255, 255, 0.85);
+    border-bottom: 1px solid rgba(59, 130, 246, 0.15);
 }
 
 .nav {
@@ -40,8 +41,7 @@ body {
 .logo {
     font-weight: 700;
     font-size: 1.1rem;
-    color: #38bdf8;
-    letter-spacing: 0.5px;
+    color: #3b82f6;
 }
 
 .nav-links {
@@ -52,7 +52,7 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: #e5e7eb;
+    color: #0f172a;
     font-weight: 500;
     position: relative;
     transition: color 0.2s ease;
@@ -65,18 +65,17 @@ body {
     left: 0;
     width: 0;
     height: 2px;
-    background: #38bdf8;
+    background: #3b82f6;
     transition: width 0.25s ease;
 }
 
 .nav-links a:hover {
-    color: #38bdf8;
+    color: #3b82f6;
 }
 
 .nav-links a:hover::after {
     width: 100%;
 }
-
 
 .hero {
     display: grid;
@@ -88,18 +87,19 @@ body {
 .hero-text h1 {
     font-size: 3.5rem;
     font-weight: 700;
+    color: #3b82f6;
 }
 
 .hero-text h2 {
     font-size: 1.5rem;
-    color: #38bdf8;
+    color: #3b82f6;
     margin: 0.5rem 0 1.5rem;
 }
 
 .hero-text p {
     font-size: 1.1rem;
     line-height: 1.6;
-    color: #cbd5f5;
+    color: #475569;
     max-width: 480px;
 }
 
@@ -125,7 +125,7 @@ body {
 .intro {
     max-width: 520px;
     line-height: 1.6;
-    color: #cbd5f5;
+    color: #475569;
     font-size: 1.05rem;
 }
 
@@ -149,8 +149,8 @@ body {
     height: 260px;
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid rgba(56, 189, 248, 0.4);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border: 3px solid rgba(59, 130, 246, 0.35);
+    box-shadow: 0 16px 32px rgba(15, 23, 42, 0.12);
 }
 
 .buttons {
@@ -168,18 +168,19 @@ body {
 }
 
 .btn.primary {
-    background: #38bdf8;
-    color: #020617;
+    background: #3b82f6;
+    color: white;
 }
 
 .btn.secondary {
-    border: 1px solid #38bdf8;
-    color: #38bdf8;
+    border: 1px solid #3b82f6;
+    color: #3b82f6;
+    background: transparent;
 }
 
 .btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(56, 189, 248, 0.25);
+    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.25);
 }
 
 .hero-visual {
@@ -188,17 +189,15 @@ body {
 }
 
 .code-card {
-    background: rgba(15, 23, 42, 0.8);
+    background: #ffffff;
     border-radius: 12px;
     padding: 1.5rem;
-    width: 100%;
-    max-width: 420px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-    border: 1px solid rgba(56, 189, 248, 0.2);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.1);
 }
 
 pre {
     font-family: monospace;
     font-size: 0.9rem;
-    color: #a5f3fc;
+    color: #1e40af;
 }
