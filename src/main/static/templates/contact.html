@@ -1,10 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="UTF-8" />
+    <title>Contact | Lauren Campion</title>
+    <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
+
+<header class="site-header">
+    <nav class="nav">
+        <a href="../../../../index.html" class="logo">LaurenCampion</a>
+        <ul class="nav-links">
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html" class="active">Contact</a>
+        </ul>
+    </nav>
+</header>
+
+<section id="contact" class="contact section-full">
+    <div class="container contact-grid">
+
+        <!-- Left text -->
+        <div class="contact-text">
+            <h2>Get in Touch</h2>
+            <p class="contact-intro">
+                I’m always open to new opportunities, collaborations, or just a good conversation.
+                Whether you’re hiring, building something interesting, or want to connect — I’d love to hear from you.
+            </p>
+
+            <ul class="contact-links">
+                <li>
+                    <strong>Email:</strong>
+                    <a href="mailto:laurencampion@gmail.com">laurencampion@gmail.com</a>
+                </li>
+                <li>
+                    <strong>LinkedIn:</strong>
+                    <a href="https://www.linkedin.com/" target="_blank">linkedin.com/in/laurencampion</a>
+                </li>
+                <li>
+                    <strong>GitHub:</strong>
+                    <a href="https://github.com/" target="_blank">github.com/laurencampion</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Form -->
+        <form class="contact-form">
+            <label>
+                Name
+                <input type="text" name="name" required />
+            </label>
+
+            <label>
+                Email
+                <input type="email" name="email" required />
+            </label>
+
+            <label>
+                Message
+                <textarea name="message" rows="5" required></textarea>
+            </label>
+
+            <button type="submit" class="btn primary">
+                Send Message
+            </button>
+        </form>
+
+    </div>
+</section>
 
 </body>
 </html>
