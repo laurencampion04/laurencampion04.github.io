@@ -334,6 +334,11 @@ img {
         order: 1;
     }
 
+    .intro {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .home-photo {
         order: 2;
         justify-content: center; /* ← THIS centers it */
