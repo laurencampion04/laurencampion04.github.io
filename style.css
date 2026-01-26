@@ -55,7 +55,7 @@ img {
 }
 
 .full-height {
-    min-height: 100vh;
+    min-height: calc(100vh - 88px);
     display: flex;
     align-items: center;
 }
@@ -124,6 +124,7 @@ img {
     align-items: center;
     gap: 4rem;
     margin-top: 0;
+    padding: 0;
 }
 
 .home-text h1 {
@@ -329,18 +330,19 @@ img {
         text-align: center;
     }
 
-    .home-photo {
-        order: 2;
-        margin-top: 2rem;
-        justify-self: center;
-    }
-
     .home-text {
         order: 1;
+    }
+
+    .home-photo {
+        order: 2;
+        justify-content: center; /* ← THIS centers it */
+        margin-top: 2.5rem;
     }
 
     .buttons {
         justify-content: center;
     }
 }
+
 
