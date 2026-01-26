@@ -120,7 +120,7 @@ img {
    ========================= */
 .home-hero {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     align-items: center;
     gap: 4rem;
     margin-top: 0;
@@ -324,7 +324,7 @@ img {
 /* =========================
    RESPONSIVE
    ========================= */
-@media (max-width: 900px) {
+@media (max-width: 901px) {
     .home-hero {
         grid-template-columns: 1fr;
         text-align: center;
@@ -334,15 +334,15 @@ img {
         order: 1;
     }
 
+    .home-photo {
+        order: 2;
+        justify-content: flex-end; /* ← THIS centers it */
+        margin-top: 2.5rem;
+    }
+
     .intro {
         margin-left: auto;
         margin-right: auto;
-    }
-
-    .home-photo {
-        order: 2;
-        justify-content: center; /* ← THIS centers it */
-        margin-top: 2.5rem;
     }
 
     .buttons {
