@@ -185,6 +185,11 @@ img {
     white-space: nowrap;
 }
 
+.projects-cta {
+    margin-top: 3rem;
+    justify-self: center;
+}
+
 .btn {
     padding: 0.8rem 1.6rem;
     border-radius: 10px;
