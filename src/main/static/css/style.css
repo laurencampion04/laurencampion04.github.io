@@ -587,9 +587,6 @@ img {
 /* =========================
    RESPONSIVE
    ========================= */
-/* =========================
-   RESPONSIVE
-   ========================= */
 
 /* Tablets & small laptops */
 @media (max-width: 900px) {
@@ -677,6 +674,44 @@ img {
     .process h2 {
         font-size: 2rem;
     }
+
+    /* About section */
+    .about-intro {
+        max-width: 100%;
+        font-size: 1rem;
+    }
+
+    .accordion {
+        max-width: 100%;
+    }
+
+    .accordion-header {
+        padding: 1rem 1.25rem;
+        font-size: 0.95rem;
+    }
+
+    .accordion-content ul {
+        grid-template-columns: 1fr;
+        padding: 1.25rem;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .contact-text h2 {
+        font-size: 2.1rem;
+    }
+
+    .contact-intro {
+        max-width: 100%;
+        font-size: 1rem;
+    }
+
+    .contact-form {
+        padding: 2rem 1.75rem;
+    }
 }
 
 /* Small phones */
@@ -712,6 +747,23 @@ img {
         box-shadow: none;
     }
 }
+
+@media (max-width: 480px) {
+
+    .contact-text h2,
+    .about h2 {
+        font-size: 1.9rem;
+    }
+
+    .contact-form {
+        padding: 1.5rem;
+    }
+
+    .accordion-header {
+        font-size: 0.9rem;
+    }
+}
+
 
 
 
