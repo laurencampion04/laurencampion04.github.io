@@ -177,6 +177,12 @@ img {
     margin-top: 2.5rem;
     display: flex;
     gap: 1.25rem;
+    align-items: flex-end;
+}
+
+.buttons .btn {
+    width: fit-content;
+    white-space: nowrap;
 }
 
 .btn {
@@ -202,6 +208,8 @@ img {
     transform: translateY(-2px);
     box-shadow: 0 12px 28px rgba(203, 153, 126, 0.35);
 }
+
+
 
 /* =========================
    FOCUS SECTION
