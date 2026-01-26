@@ -85,6 +85,13 @@ img {
     font-weight: 700;
     font-size: 1.1rem;
     color: var(--accent);
+    text-decoration: none;
+    letter-spacing: 0.5rem;
+    transition: color 0.2s ease;
+}
+
+.logo:hover {
+    color: var(--dry-sage);
 }
 
 .nav-links {
