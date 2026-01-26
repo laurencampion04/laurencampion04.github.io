@@ -118,13 +118,13 @@ img {
 /* =========================
    HOME HERO
    ========================= */
-.home-hero {
+.home-hero .container {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 4rem;
-    margin-top: 0;
-    padding: 0;
+    /*margin-top: 0;*/
+    padding: 0 2rem;
 }
 
 .home-text h1 {
@@ -325,17 +325,17 @@ img {
    RESPONSIVE
    ========================= */
 @media (max-width: 901px) {
-    .home-hero {
+    .home-hero .container {
         grid-template-columns: 1fr;
         text-align: center;
     }
 
-    .home-text {
-        order: 1;
-    }
+    /*.home-text {*/
+    /*    order: 1;*/
+    /*}*/
 
     .home-photo {
-        order: 2;
+        /*order: 2;*/
         justify-content: center; /* ← THIS centers it */
         margin-top: 2.5rem;
     }
