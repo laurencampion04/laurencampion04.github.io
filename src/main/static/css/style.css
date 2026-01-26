@@ -635,7 +635,7 @@ img {
 
     /* Header / Nav */
     .nav {
-        flex-direction: column;
+        flex-direction: row;
         gap: 1rem;
         padding: 1rem 1.5rem;
     }
