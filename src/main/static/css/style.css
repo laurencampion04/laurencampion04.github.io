@@ -622,7 +622,7 @@ img {
 
     /* Layout */
     .container {
-        padding: 4rem 1.5rem;
+        padding: 3rem 1.25rem;
     }
 
     .full-height {
@@ -676,9 +676,14 @@ img {
     }
 
     /* About section */
+    .about {
+        text-align: left;
+    }
+
     .about-intro {
         max-width: 100%;
         font-size: 1rem;
+        margin-bottom: 2rem;
     }
 
     .accordion {
@@ -692,7 +697,11 @@ img {
 
     .accordion-content ul {
         grid-template-columns: 1fr;
-        padding: 1.25rem;
+        padding: 1rem 1.25rem;
+    }
+
+    .contact {
+        text-align: left;
     }
 
     .contact-grid {
@@ -749,6 +758,10 @@ img {
 }
 
 @media (max-width: 480px) {
+
+    .container {
+        padding: 2rem 1rem;
+    }
 
     .contact-text h2,
     .about h2 {
